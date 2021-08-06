@@ -32,4 +32,4 @@ git remote add origin https://github.com/nikorpt/coursera.git
 #--------------------------------------
 git add test.txt
 git commit -m "add test.txt"
-git push -u origin master
+git push -u origin main # default : main for github, master for bitbucket
