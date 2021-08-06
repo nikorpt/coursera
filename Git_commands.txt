@@ -1,0 +1,35 @@
+# Git structure
+#--------------
+
+working tree    staging area   local repository (.git)     remote repository
+
+# Commit to a local repository
+------------------------------
+dir /a      # show hidden folder (.git)
+git status
+echo a > test.txt
+git add test.txt    # add file to staging area
+code test.txt
+git status -s
+git add test.txt
+git status -s
+git commit -m "new commit description"  # commit stagged files to local repository
+git status -s
+git log 
+git log --oneline -2
+
+# Clone remote repository when no local repository on the machine
+#----------------------------------------------------------------
+git clone https://github.com/nikorpt/coursera.git
+cd coursera
+git remote -v
+
+# Copy remote repository on your local repository
+#------------------------------------------------
+git remote add origin https://github.com/nikorpt/coursera.git
+
+# Push your commit on remote repository
+#--------------------------------------
+git add test.txt
+git commit -m "add test.txt"
+git push -u origin master
