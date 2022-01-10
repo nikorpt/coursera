@@ -1,3 +1,6 @@
+(WEEK 1)
+--------
+
 # Git structure
 #--------------
 
@@ -33,3 +36,23 @@ git remote add origin https://github.com/nikorpt/coursera.git
 git add test.txt
 git commit -m "add test.txt"
 git push -u origin main # default : main for github, master for bitbucket
+
+(WEEK 2)
+--------
+
+# create a new branch
+#--------------------
+git branch feature1
+git checkout feature1
+
+# check git graphic
+#------------------
+git log --oneline --graph --all
+
+# check merge branches
+#---------------------
+git merge feature1
+
+# check delete branch
+#--------------------
+git branch -D feature1
